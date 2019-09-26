@@ -12,11 +12,11 @@ class ActiveCity extends Component {
         </div>
       );
     }
-    const src = `https://kitt.lewagon.com/placeholder/cities/:${this.props.ActiveCity.slug}`;
+    const src = `https://kitt.lewagon.com/placeholder/cities/${this.props.activeCity.slug}`;
     return (
       <div className="active-city">
-        <h3>{this.props.ActiveCity.name}</h3>
-        <p>{this.props.ActiveCity.address}</p>
+        <h3>{this.props.activeCity.name}</h3>
+        <p>{this.props.activeCity.address}</p>
         <img src={src} alt="" />
       </div>
     );
@@ -25,7 +25,7 @@ class ActiveCity extends Component {
 
 function mapStateToProps(state) {
   return {
-    ActiveCity: state.ActiveCity
+    activeCity: state.activeCity
   };
 }
 

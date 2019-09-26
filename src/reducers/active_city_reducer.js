@@ -1,7 +1,7 @@
 const activeCityReducer = (state, action) => {
   if (state === undefined) {
   // Reducer initialisation
-    return [];
+    return null;
   }
   switch (action.type) {
     case ("ACTIVE_CITY"):

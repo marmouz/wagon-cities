@@ -14,7 +14,7 @@ class City extends Component {
   render() {
     const { city } = this.props;
     let containerClasses = "list-group-item";
-    if (this.props.city === this.props.ActiveCity) {
+    if (this.props.city === this.props.activeCity) {
       containerClasses += " active";
     }
     return (
@@ -31,7 +31,7 @@ class City extends Component {
 
 function mapStateToProps(state) {
   return {
-    ActiveCity: state.ActiveCity
+    activeCity: state.activeCity
   };
 }
 
